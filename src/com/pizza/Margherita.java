@@ -1,23 +1,23 @@
 package com.pizza;
 
 public class Margherita extends Pizza {
-    public Margherita(Pizzaria pizzaria){
-        this.pizzaria = pizzaria;
+    public Margherita(Pizzeria pizzeria){
+        super(pizzeria);
     }
 
     public String rezept(){
         String rezept = "Pizza Margehrita = ";
-        rezept += this.pizzaria.teig();
-        rezept += ", " + this.pizzaria.tomatenSosse();
-        rezept += ", " + this.pizzaria.kaese();
+        rezept += this.pizzeria.teig();
+        rezept += ", " + this.pizzeria.tomatenSosse();
+        rezept += ", " + this.pizzeria.kaese();
         return rezept;
     }
 
     public double preis(){
         double preis;
-        preis = this.pizzaria.teigPreis();
-        preis += this.pizzaria.tomatenSossePreis();
-        preis += this.pizzaria.kaesePreis();
+        preis = this.pizzeria.teigPreis();
+        preis += this.pizzeria.tomatenSossePreis();
+        preis += this.pizzeria.kaesePreis();
         return preis;
     }
 }

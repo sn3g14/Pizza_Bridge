@@ -1,15 +1,15 @@
 package com.pizza;
 
-public class Pizzaria2 implements Pizzaria{
+public class Pizzeria3 implements Pizzeria {
 
     @Override
     public String teig() {
-        return "Teig: 190g";
+        return "Teig: 210g";
     }
 
     @Override
     public double teigPreis() {
-        return 0.40;
+        return 0.75;
     }
 
     @Override
@@ -19,12 +19,12 @@ public class Pizzaria2 implements Pizzaria{
 
     @Override
     public double tomatenSossePreis() {
-        return 0.25;
+        return 0.30;
     }
 
     @Override
     public String tomaten() {
-        return "Tomaten: 60g";
+        return "Tomaten: 55g";
     }
 
     @Override
@@ -34,12 +34,12 @@ public class Pizzaria2 implements Pizzaria{
 
     @Override
     public String kaese() {
-        return "Kaese: 60g";
+        return "Kaese: 50g";
     }
 
     @Override
     public double kaesePreis() {
-        return 0.70;
+        return 0.40;
     }
 
     @Override
@@ -49,17 +49,17 @@ public class Pizzaria2 implements Pizzaria{
 
     @Override
     public double salamiPreis() {
-        return 0.40;
+        return 0.60;
     }
 
     @Override
     public String schinken() {
-        return "Schinken: 3 Scheiben";
+        return "Schinken: 2 Scheiben";
     }
 
     @Override
     public double schinkenPreis() {
-        return 0.25;
+        return 0.30;
     }
 
     @Override
@@ -69,17 +69,17 @@ public class Pizzaria2 implements Pizzaria{
 
     @Override
     public double paprikaPreis() {
-        return 0.25;
+        return 0.35;
     }
 
     @Override
     public String sardellen() {
-        return "Sardellen: 8 Stück";
+        return "Sardellen: 9 Stück";
     }
 
     @Override
     public double sardellenPreis() {
-        return 1.90;
+        return 2.10;
     }
 }
 

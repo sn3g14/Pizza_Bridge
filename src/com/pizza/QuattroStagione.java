@@ -1,31 +1,31 @@
 package com.pizza;
 
 public class QuattroStagione extends Pizza {
-    public QuattroStagione(Pizzaria pizzaria){
-        this.pizzaria = pizzaria;
+    public QuattroStagione(Pizzeria pizzeria){
+        super(pizzeria);
     }
 
     public String rezept(){
         String rezept = "Pizza Quattro Stagione = ";
-        rezept += this.pizzaria.teig();
-        rezept += ", " + this.pizzaria.tomatenSosse();
-        rezept += ", " + this.pizzaria.kaese();
-        rezept += ", " + this.pizzaria.tomaten();
-        rezept += ", " + this.pizzaria.paprika();
-        rezept += ", " + this.pizzaria.schinken();
-        rezept += ", " + this.pizzaria.salami();
+        rezept += this.pizzeria.teig();
+        rezept += ", " + this.pizzeria.tomatenSosse();
+        rezept += ", " + this.pizzeria.kaese();
+        rezept += ", " + this.pizzeria.tomaten();
+        rezept += ", " + this.pizzeria.paprika();
+        rezept += ", " + this.pizzeria.schinken();
+        rezept += ", " + this.pizzeria.salami();
         return rezept;
     }
 
     public double preis(){
         double preis;
-        preis = this.pizzaria.teigPreis();
-        preis += this.pizzaria.tomatenSossePreis();
-        preis += this.pizzaria.kaesePreis();
-        preis += this.pizzaria.tomatenPreis();
-        preis += this.pizzaria.paprikaPreis();
-        preis += this.pizzaria.schinkenPreis();
-        preis += this.pizzaria.salamiPreis();
+        preis = this.pizzeria.teigPreis();
+        preis += this.pizzeria.tomatenSossePreis();
+        preis += this.pizzeria.kaesePreis();
+        preis += this.pizzeria.tomatenPreis();
+        preis += this.pizzeria.paprikaPreis();
+        preis += this.pizzeria.schinkenPreis();
+        preis += this.pizzeria.salamiPreis();
         return preis;
     }
 }

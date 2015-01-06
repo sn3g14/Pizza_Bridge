@@ -1,25 +1,25 @@
 package com.pizza;
 
 public class Napoli extends Pizza {
-    public Napoli(Pizzaria pizzaria){
-        this.pizzaria = pizzaria;
+    public Napoli(Pizzeria pizzeria){
+        super(pizzeria);
     }
 
     public String rezept(){
         String rezept = "Pizza Napoli = ";
-        rezept += this.pizzaria.teig();
-        rezept += ", " + this.pizzaria.tomatenSosse();
-        rezept += ", " + this.pizzaria.kaese();
-        rezept += ", " + this.pizzaria.sardellen();
+        rezept += this.pizzeria.teig();
+        rezept += ", " + this.pizzeria.tomatenSosse();
+        rezept += ", " + this.pizzeria.kaese();
+        rezept += ", " + this.pizzeria.sardellen();
         return rezept;
     }
 
     public double preis(){
         double preis;
-        preis = this.pizzaria.teigPreis();
-        preis += this.pizzaria.tomatenSossePreis();
-        preis += this.pizzaria.kaesePreis();
-        preis += this.pizzaria.sardellenPreis();
+        preis = this.pizzeria.teigPreis();
+        preis += this.pizzeria.tomatenSossePreis();
+        preis += this.pizzeria.kaesePreis();
+        preis += this.pizzeria.sardellenPreis();
         return preis;
     }
 }

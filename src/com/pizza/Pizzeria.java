@@ -3,7 +3,7 @@ package com.pizza;
 /**
  * Created by Sandro on 09.12.2014.
  */
-public interface Pizzaria {
+public interface Pizzeria {
     public String teig();
     public double teigPreis();
     public String tomatenSosse();

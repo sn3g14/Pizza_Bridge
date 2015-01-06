@@ -1,25 +1,25 @@
 package com.pizza;
 
 public class Pomodore extends Pizza {
-    public Pomodore(Pizzaria pizzaria){
-        this.pizzaria = pizzaria;
+    public Pomodore(Pizzeria pizzeria){
+        super(pizzeria);
     }
 
     public String rezept(){
         String rezept = "Pizza Pomodore = ";
-        rezept += this.pizzaria.teig();
-        rezept += ", " + this.pizzaria.tomatenSosse();
-        rezept += ", " + this.pizzaria.kaese();
-        rezept += ", " + this.pizzaria.tomaten();
+        rezept += this.pizzeria.teig();
+        rezept += ", " + this.pizzeria.tomatenSosse();
+        rezept += ", " + this.pizzeria.kaese();
+        rezept += ", " + this.pizzeria.tomaten();
         return rezept;
     }
 
     public double preis(){
         double preis;
-        preis = this.pizzaria.teigPreis();
-        preis += this.pizzaria.tomatenSossePreis();
-        preis += this.pizzaria.kaesePreis();
-        preis += this.pizzaria.tomatenPreis();
+        preis = this.pizzeria.teigPreis();
+        preis += this.pizzeria.tomatenSossePreis();
+        preis += this.pizzeria.kaesePreis();
+        preis += this.pizzeria.tomatenPreis();
         return preis;
     }
 }
